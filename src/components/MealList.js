@@ -23,7 +23,7 @@ const MealList = () => {
 
 const MealType = ({ type, children }) => {
     return (
-        <NavLink to={`/cuisines/${type}`} className="flex flex-col justify-center items-center p-2 rounded-full text-slate-50 bg-sky-900 text-2xl m-2 hover:drop-shadow-3xl">
+        <NavLink to={`/cuisines/${type}?cuisine=American`} className="flex flex-col justify-center items-center p-2 rounded-full text-slate-50 bg-sky-900 text-2xl m-2 hover:drop-shadow-3xl">
             {children}
             {/* <span className='text-xs font-semibold'>Main</span> */}
         </NavLink>
