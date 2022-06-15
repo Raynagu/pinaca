@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import '@splidejs/react-splide/css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.active{
+    background-image: linear-gradient(to right, #02459b, #314fa2, #4959a9, #5d64b0, #6f6fb7);
+}
