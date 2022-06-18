@@ -4,11 +4,6 @@ import { GiCupcake, GiFruitBowl, GiForkKnifeSpoon } from 'react-icons/gi';
 import { NavLink } from 'react-router-dom';
 
 const MealList = () => {
-    // const cuisinsList = [{ name: "Main Course", icon: "MdFoodBank" },
-    // { name: "BreakFast", icon: "GiForkKnifeSpoon" },
-    // { name: "Dessert", icon: "GiCupcake" },
-    // { name: "Salad", icon: "GiFruitBowl" },
-    // { name: "Drink", icon: "MdFastfood" }];
 
     return (
         <div className='flex flex-row justify-center items-center mb-5'>

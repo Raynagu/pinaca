@@ -13,12 +13,6 @@ const Cuisines = () => {
     const [searchParams] = useSearchParams();
     const cuisineType = searchParams.get("cuisine") || 'American';
 
-    // const handleCuisineType = () =>{
-    //     setCuisineType(cType);
-
-    // }
-    // https://api.spoonacular.com/recipes/complexSearch?type=erwer&cuisine=pasta&number=2&apiKey=
-
 
     useEffect(() => {
         const getCuisines = async (type, cuisine = 0) => {
@@ -39,16 +33,11 @@ const Cuisines = () => {
                     // }
                     // console.log(response.data.results);
                     setInfo(response.data.results);
-                    // localStorage.setItem("details", JSON.stringify(response.data))
                 } else {
                     setInfo(localCache);
                 }
             } catch (e) {
-                // if(isMounted){
                 console.log(e.message);
-
-                // localStorage.removeItem("details");
-                // }
             }
 
             setIsLoading(false);
