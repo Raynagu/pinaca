@@ -46,7 +46,7 @@ const Popular = () => {
         return cleanUp;
     }, []);
 
-    console.log(recipes);
+    // console.log(recipes);
     return (
         <div className="flex flex-col justify-center items-center w-full">
             <div className="relative">
