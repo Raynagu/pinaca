@@ -13,3 +13,6 @@
 .active{
     background-image: linear-gradient(to right, #02459b, #314fa2, #4959a9, #5d64b0, #6f6fb7);
 }
+.instructions ol{
+    list-style: decimal;
+}

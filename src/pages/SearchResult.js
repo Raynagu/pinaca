@@ -42,7 +42,7 @@ const SearchResult = () => {
 
 
     return (
-        <div className="flex flex-wrap flex-row justify-around items-center w-full">
+        <div className="flex flex-wrap flex-row justify-around items-center w-full ">
             {isLoading ? <h4 className="font-bold text-sky-900 my-3"> Loading Recipes....</h4> : (
 
                 <>
