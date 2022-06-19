@@ -19,7 +19,7 @@ const Details = () => {
             try {
                 if (!localCache) {
                     const response = await axios.get(`${bUrl}recipes/${id}/information?includeNutrition=false&&apiKey=${apiKey}`);
-                    console.log(response.data);
+                    // console.log(response.data);
                     setInfo(response.data);
                     localStorage.setItem("item", JSON.stringify(response.data));
                 } else {

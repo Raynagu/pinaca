@@ -22,10 +22,10 @@ const Trending = () => {
                 const res = await axios.get(url);
                 setRecipes(res.data.recipes);
                 localStorage.setItem("trending", JSON.stringify(res.data.recipes));
-                console.log(res.data.recipes);
+                // console.log(res.data.recipes);
                 // console.log("data fetch");
             } else {
-                console.log(localCache);
+                // console.log(localCache);
                 setRecipes(localCache);
             }
         } catch (e) {
