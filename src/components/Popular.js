@@ -14,6 +14,7 @@ const Popular = () => {
         const qUrl = 'recipes/random?number=20';
         const url = `${process.env.REACT_APP_BASE_URL}${qUrl}${apiKey}`;
 
+        setIsLoading(true);
         try {
             if (isMounted && !localCache) {
                 const res = await axios.get(url);
@@ -32,6 +33,8 @@ const Popular = () => {
                 localStorage.removeItem("popular");
             }
         }
+
+        setIsLoading(false);
 
     };
 

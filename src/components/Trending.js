@@ -16,15 +16,16 @@ const Trending = () => {
         const qUrl = 'recipes/random?number=8&tags=vegetarian,dessert';
         const url = `${process.env.REACT_APP_BASE_URL}${qUrl}${apiKey}`;
 
+        setIsLoading(true);
         try {
             if (isMounted && !localCache) {
                 const res = await axios.get(url);
                 setRecipes(res.data.recipes);
                 localStorage.setItem("trending", JSON.stringify(res.data.recipes));
-                // console.log(res.data.recipes);
+                console.log(res.data.recipes);
                 // console.log("data fetch");
             } else {
-                // console.log(localCache);
+                console.log(localCache);
                 setRecipes(localCache);
             }
         } catch (e) {
@@ -34,6 +35,7 @@ const Trending = () => {
                 localStorage.removeItem("trending");
             }
         }
+        setIsLoading(false);
 
     };
 
